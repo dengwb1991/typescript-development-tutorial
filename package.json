@@ -1,0 +1,19 @@
+{
+  "name": "typescript-development-tutorial",
+  "version": "1.0.0",
+  "description": "typescript development tutorial",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "dengwb",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.1.0"
+  }
+}
