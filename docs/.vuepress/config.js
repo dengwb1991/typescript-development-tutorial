@@ -1,7 +1,7 @@
 module.exports = {
   port: 8083,
   title: 'TypeScript开发教程',
-  base: 'typescript',
+  base: '/typescript/',
   description: '目录',
   themeConfig: {
     // The navigation bar
