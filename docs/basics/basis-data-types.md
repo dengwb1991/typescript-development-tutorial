@@ -84,6 +84,7 @@ console.log(tuple) // [0, "1", "a"]
 tuple[2] // Error: Tuple type '[number, string]' of length '2' has no element at index '2'.
 ```
 
+
 ### 枚举
 
 我们使用 `enum` 表示枚举类型。 枚举成员值只读，不可修改。 枚举类型是对 JavaScript 标准数据类型的一个补充。C# 等其它语言一样，使用枚举类型为一组数值赋予友好的命名。
@@ -208,6 +209,32 @@ x = {}
 let arr: any[] = [1, 'a', null]
 ```
 
+### 函数
+
+我们先回顾在 JavaScript 中，使用 es6 语法定义一个函数。
+
+```js
+let add = (x, y) => x + y
+```
+
+上面例子中，`add` 函数有两个参数 `x` 和 `y` 返回其相加之和。 该例子放在 TypeScript 中会提示 参数 `x` 和 `y` 隐含一个 `any` 类型。 所以我们修改如下：
+
+```ts
+let add = (x: number, y: number): number => x + y
+```
+
+给参数添加 `number` 类型，在括号之后也添加返回值的类型。这里返回值类型可以省略，因为 TypeScript 有类型推断机制，这个我们之后详细介绍。
+
+接下来我们使用 TypeScript 定义一个函数类型并实现它。
+
+```ts
+let plus: (x: number, y: number) => number
+
+plus = (a, b) => a + b
+
+plus(2, 2) // 2
+```
+
 ### never
 
 `never` 类型表示的是那些永不存在的值的类型。 例如，`never` 类型是那些总是会抛出异常或根本就不会有返回值的函数表达式或箭头函数表达式的返回值类型；变量也可能是 `never` 类型，当它们被永不为真的类型保护所约束时。
@@ -222,3 +249,7 @@ let endless = (): never => {
     while(true) {}
 }
 ```
+
+:::tip
+类型推断：变量在声明时并未赋值，类型推断为 `any`
+:::
