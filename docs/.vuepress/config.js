@@ -29,7 +29,8 @@ module.exports = {
         title: '基础',
         collapsable: false,
         children: [
-            'basics/basis-data-types'
+            'basics/basis-data-types',
+            'basics/interface'
         ]
       }
     ],
