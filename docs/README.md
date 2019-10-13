@@ -15,3 +15,5 @@ home: true
 [TypeScript 基础类型](/basics/basis-data-types.html)
 
 [TypeScript 接口](/basics/interface.html)
+
+[TypeScript 函数](/basics/function.html)

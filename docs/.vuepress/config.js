@@ -30,7 +30,8 @@ module.exports = {
         collapsable: false,
         children: [
             'basics/basis-data-types',
-            'basics/interface'
+            'basics/interface',
+            'basics/function'
         ]
       }
     ],
