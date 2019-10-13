@@ -100,4 +100,4 @@ function add (...rest: any[]): any {
 
 :::warning
 `any` 类型函数不是重载列表的一部分
-:::warning
+:::
