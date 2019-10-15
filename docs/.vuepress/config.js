@@ -20,18 +20,19 @@ module.exports = {
         title: '介绍',
         collapsable: false,
         children: [
-            'introduce/what-is-typescript',
-            'introduce/install-typescript',
-            'introduce/hello-typescript'
+          'introduce/what-is-typescript',
+          'introduce/install-typescript',
+          'introduce/hello-typescript'
         ]
       },
       {
         title: '基础',
         collapsable: false,
         children: [
-            'basics/basis-data-types',
-            'basics/interface',
-            'basics/function'
+          'basics/basis-data-types',
+          'basics/interface',
+          'basics/function',
+          'basics/class'
         ]
       }
     ],

@@ -17,3 +17,5 @@ home: true
 [TypeScript 接口](/basics/interface.html)
 
 [TypeScript 函数](/basics/function.html)
+
+[TypeScript 类](/basics/class.html)
