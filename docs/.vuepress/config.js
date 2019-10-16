@@ -33,7 +33,8 @@ module.exports = {
           'basics/interface',
           'basics/function',
           'basics/class',
-          'basics/class-and-interface'
+          'basics/class-and-interface',
+          'basics/generics'
         ]
       }
     ],

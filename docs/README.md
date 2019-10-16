@@ -21,3 +21,5 @@ home: true
 [TypeScript 类](/basics/class.html)
 
 [TypeScript 类与接口](/basics/class-and-interface.html)
+
+[TypeScript 泛型](/basics/generics.html)
