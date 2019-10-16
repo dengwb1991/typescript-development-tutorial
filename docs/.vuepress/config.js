@@ -17,7 +17,7 @@ module.exports = {
     // The sidebar
     sidebar: [
       {
-        title: '介绍',
+        title: '初识篇',
         collapsable: false,
         children: [
           'introduce/what-is-typescript',
@@ -26,13 +26,14 @@ module.exports = {
         ]
       },
       {
-        title: '基础',
+        title: '基础篇',
         collapsable: false,
         children: [
           'basics/basis-data-types',
           'basics/interface',
           'basics/function',
-          'basics/class'
+          'basics/class',
+          'basics/class-and-interface'
         ]
       }
     ],

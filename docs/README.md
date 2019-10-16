@@ -2,7 +2,7 @@
 home: true
 ---
 
-**介绍**
+**初识篇**
 
 [什么是 TypeScript](/introduce/what-is-typescript.html)
 
@@ -10,7 +10,7 @@ home: true
 
 [第一个 TypeScript 项目](/introduce/hello-typescript.html)
 
-**基础**
+**基础篇**
 
 [TypeScript 基础类型](/basics/basis-data-types.html)
 
@@ -19,3 +19,5 @@ home: true
 [TypeScript 函数](/basics/function.html)
 
 [TypeScript 类](/basics/class.html)
+
+[TypeScript 类与接口](/basics/class-and-interface.html)
