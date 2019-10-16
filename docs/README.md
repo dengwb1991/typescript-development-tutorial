@@ -2,7 +2,13 @@
 home: true
 ---
 
+<div class="home-content-wrap">
+<div class="home-item">
+<span class="home-item-title">
+
 **初识篇**
+
+</span>
 
 [什么是 TypeScript](/introduce/what-is-typescript.html)
 
@@ -10,7 +16,14 @@ home: true
 
 [第一个 TypeScript 项目](/introduce/hello-typescript.html)
 
+</div>
+
+<div class="home-item">
+<span class="home-item-title">
+
 **基础篇**
+
+</span>
 
 [TypeScript 基础类型](/basics/basis-data-types.html)
 
@@ -25,3 +38,31 @@ home: true
 [TypeScript 泛型](/basics/generics.html)
 
 [TypeScript 类型检查机制](/basics/type-check-mechanism.html)
+
+</div>
+</div>
+
+<style>
+.home-content-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.home-item {
+  padding: 0 30px;
+}
+.home-item-title {
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .home-content-wrap {
+    display: block;
+  }
+  .home-item {
+    padding: 0;
+  }
+  .home-item-title {
+    text-align: left;
+  }
+}
+</style>
