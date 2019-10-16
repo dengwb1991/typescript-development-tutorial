@@ -23,3 +23,5 @@ home: true
 [TypeScript 类与接口](/basics/class-and-interface.html)
 
 [TypeScript 泛型](/basics/generics.html)
+
+[TypeScript 类型检查机制](/basics/type-check-mechanism.html)

@@ -34,7 +34,8 @@ module.exports = {
           'basics/function',
           'basics/class',
           'basics/class-and-interface',
-          'basics/generics'
+          'basics/generics',
+          'basics/type-check-mechanism'
         ]
       }
     ],
