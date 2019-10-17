@@ -150,6 +150,32 @@ let month = [Month.Jan, Month.Feb, Month.Mar]
 var month = [0 /* Jan */, 1 /* Feb */, 2 /* Mar */]; // [0 /* Jan */, 1 /* Feb */, 2 /* Mar */]
 ```
 
+#### 外部枚举
+
+外部枚举（Ambient Enums）是使用 `declare enum` 定义的枚举类型。
+
+```ts
+declare enum Month {
+  Jan,
+  Feb,
+  Mar
+}
+let month = [Month.Jan, Month.Feb, Month.Mar]
+```
+
+编译后：
+
+```js
+"use strict";
+let month = [Month.Jan, Month.Feb, Month.Mar];
+```
+
+`declare` 定义的类型只会用于编译时的检查，编译结果中会被删除。所以按照上述例子编译后的结果来看，显然是不可以的。因为 Month 未定义。
+
+:::tip
+`declare` 和 `const` 可以同时存在
+:::
+
 ### 对象
 
 TypeScript 有两种定义对象的方式。 第一种，可以在元素后加上 `object`。 第二种，可以使用 `{ key: 元素类型 }` 形式。
