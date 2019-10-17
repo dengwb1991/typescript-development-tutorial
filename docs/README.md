@@ -39,6 +39,8 @@ home: true
 
 [TypeScript 类型检查机制](/basics/type-check-mechanism.html)
 
+[TypeScript 高级类型](/basics/advanced-type.html)
+
 </div>
 </div>
 

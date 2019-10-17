@@ -35,7 +35,8 @@ module.exports = {
           'basics/class',
           'basics/class-and-interface',
           'basics/generics',
-          'basics/type-check-mechanism'
+          'basics/type-check-mechanism',
+          'basics/advanced-type'
         ]
       }
     ],
