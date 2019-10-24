@@ -43,7 +43,8 @@ module.exports = {
         title: '工程篇',
         collapsable: false,
         children: [
-          'project/import-export'
+          'project/import-export',
+          'project/namespace'
         ]
       }
     ],

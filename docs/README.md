@@ -51,6 +51,8 @@ home: true
 
 [TypeScript 导入导出](/project/import-export.html)
 
+[TypeScript 命名空间](/project/namespace.html)
+
 </div>
 </div>
 
