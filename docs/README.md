@@ -55,6 +55,8 @@ home: true
 
 [TypeScript 声明合并](/project/declaration-merging.html)
 
+[TypeScript 声明文件](/project/declaration-files.html)
+
 </div>
 </div>
 

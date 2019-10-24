@@ -45,7 +45,8 @@ module.exports = {
         children: [
           'project/import-export',
           'project/namespace',
-          'project/declaration-merging'
+          'project/declaration-merging',
+          'project/declaration-files'
         ]
       }
     ],
