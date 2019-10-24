@@ -53,6 +53,8 @@ home: true
 
 [TypeScript 命名空间](/project/namespace.html)
 
+[TypeScript 声明合并](/project/declaration-merging.html)
+
 </div>
 </div>
 
