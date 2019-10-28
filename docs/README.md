@@ -4,11 +4,10 @@ home: true
 
 <div class="home-content-wrap">
 <div class="home-item">
-<span class="home-item-title">
-
-**初识篇**
-
-</span>
+<div class="home-item-title">
+  <img class="home-icon" src="/images/introduce-icon.png"/>
+  <p class="home-title">初识篇</p>
+</div>
 
 [什么是 TypeScript](/introduce/what-is-typescript.html)
 
@@ -19,11 +18,10 @@ home: true
 </div>
 
 <div class="home-item">
-<span class="home-item-title">
-
-**基础篇**
-
-</span>
+<div class="home-item-title">
+  <img class="home-icon" src="/images/basics-icon.png"/>
+  <p class="home-title">基础篇</p>
+</div>
 
 [TypeScript 基础类型](/basics/basis-data-types.html)
 
@@ -43,11 +41,10 @@ home: true
 
 </div>
 <div class="home-item">
-<span class="home-item-title">
-
-**工程篇**
-
-</span>
+<div class="home-item-title">
+  <img class="home-icon" src="/images/project-icon.png"/>
+  <p class="home-title">工程篇</p>
+</div>
 
 [TypeScript 导入导出](/project/import-export.html)
 
@@ -70,7 +67,17 @@ home: true
   padding: 0 30px;
 }
 .home-item-title {
-  text-align: center;
+  padding-left: 20px;
+}
+.home-icon {
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+}
+.home-title {
+  display: inline-block;
+  font-weight: bold;
 }
 @media screen and (max-width: 500px) {
   .home-content-wrap {
@@ -80,7 +87,7 @@ home: true
     padding: 0;
   }
   .home-item-title {
-    text-align: left;
+    padding-left: 0;
   }
 }
 </style>
