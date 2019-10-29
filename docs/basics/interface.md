@@ -122,9 +122,82 @@ interface StringArray {
 let chars: StringArray = ['a', 'b']
 ```
 
-## 函数类型接口
+接口能够描述 JavaScript 中对象拥有的各种各样的外形。 除了描述带有属性的普通对象外，接口也可以描述**对象类型**和**函数类型**。
 
-接口能够描述 JavaScript 中对象拥有的各种各样的外形。 除了描述带有属性的普通对象外，接口也可以描述函数类型。
+## 对象类型接口
+
+示例如下：
+
+```ts
+interface List {
+  readonly id: number
+  name: string
+  age?: number
+}
+
+interface Result {
+  data: List[]
+}
+
+function render (result: Result) {
+  console.log(JSON.stringify(result))
+}
+```
+
+首先我们定义了一个 `List` 对象接口，它的内部有 `id`、`name` 和 `age` 属性。接下来我们又定义了一个对象接口，这个对象接口有只一个属性 `data`，它类型为 `List[]`。接下来有一个函数，参数类型为 `Result`。
+
+接下来我们定义一个变量 `result`，将它传入 `render` 函数。
+
+```ts
+let result = {
+  data: [
+    { id: 1, name: 'A', sex: 'male' },
+    { id: 2, name: 'B' }
+  ]
+}
+
+render(result)
+```
+
+这里需要注意 `data` 数组内的第一个对象里，增加了一个 `sex` 属性，但是在上面的接口定义中没有 `sex` 属性。这时把对象赋给 `result` 变量，传入函数，不会被编译器检查到。
+
+再看下面的例子：
+
+```ts
+render({
+  data: [
+    { id: 1, name: 'A', sex: 'male' },
+    { id: 2, name: 'B' }
+  ]
+})
+// Error: Object literal may only specify known properties, and 'sex' does not exist in type 'List'.
+```
+
+我们将对象字面当做参数传给了 `render` 函数时，编译器会对对象内的属性进行检查。
+
+我们可以通过**类型断言**规避这个问题
+
+```ts
+render({
+  data: [
+    { id: 1, name: 'A', sex: 'male'},
+    { id: 2, name: 'B' }
+  ]
+} as Result)
+```
+
+除了使用 `as` 关键字，还可以用 `<>` 符号：
+
+```ts
+render(<Result>{
+  data: [
+    { id: 1, name: 'A', sex: 'male'},
+    { id: 2, name: 'B' }
+  ]
+})
+```
+
+## 函数类型接口
 
 为了使用接口表示函数类型，我们需要给接口定义一个调用签名。 它就像是一个只有参数列表和返回值类型的函数定义。参数列表里的每个参数都需要名字和类型。
 
@@ -153,8 +226,6 @@ type Add = (x: number, y: number) => number
 
 let add: Add = (a, b) => a + b
 ```
-
-
 
 :::tip
 * `interface` 定义函数(Add)和用 `type` 定义函数(Add)有区别？
