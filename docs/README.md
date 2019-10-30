@@ -5,7 +5,7 @@ home: true
 <div class="home-content-wrap">
 <div class="home-item">
 <div class="home-item-title">
-  <img class="home-icon" src="/images/introduce-icon.png"/>
+  <img class="home-icon" src="/typescript/images/introduce-icon.png"/>
   <p class="home-title">初识篇</p>
 </div>
 
@@ -19,7 +19,7 @@ home: true
 
 <div class="home-item">
 <div class="home-item-title">
-  <img class="home-icon" src="/images/basics-icon.png"/>
+  <img class="home-icon" src="/typescript/images/basics-icon.png"/>
   <p class="home-title">基础篇</p>
 </div>
 
@@ -42,7 +42,7 @@ home: true
 </div>
 <div class="home-item">
 <div class="home-item-title">
-  <img class="home-icon" src="/images/project-icon.png"/>
+  <img class="home-icon" src="/typescript/images/project-icon.png"/>
   <p class="home-title">工程篇</p>
 </div>
 
@@ -58,7 +58,7 @@ home: true
 
 <div class="home-item">
 <div class="home-item-title">
-  <img class="home-icon" src="/images/configuration-icon.png"/>
+  <img class="home-icon" src="/typescript/images/configuration-icon.png"/>
   <p class="home-title">配置篇</p>
 </div>
 
