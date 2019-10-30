@@ -55,6 +55,18 @@ home: true
 [TypeScript 声明文件](/project/declaration-files.html)
 
 </div>
+
+<div class="home-item">
+<div class="home-item-title">
+  <img class="home-icon" src="/images/configuration-icon.png"/>
+  <p class="home-title">配置篇</p>
+</div>
+
+[tsconfig 文件选项](/configuration/file-options.html)
+
+[tsconfig 编译选项](/configuration/compiler-options.html)
+
+</div>
 </div>
 
 <style>

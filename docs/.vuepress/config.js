@@ -48,6 +48,14 @@ module.exports = {
           'project/declaration-merging',
           'project/declaration-files'
         ]
+      },
+      {
+        title: '编译篇',
+        collapsable: false,
+        children: [
+          'configuration/file-options',
+          'configuration/compiler-options'
+        ]
       }
     ],
     lastUpdated: 'Last Updated'
