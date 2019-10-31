@@ -40,6 +40,7 @@ home: true
 [TypeScript 高级类型](/basics/advanced-type.html)
 
 </div>
+
 <div class="home-item">
 <div class="home-item-title">
   <img class="home-icon" src="/typescript/images/project-icon.png"/>
@@ -67,6 +68,16 @@ home: true
 [tsconfig 编译选项](/configuration/compiler-options.html)
 
 </div>
+
+<div class="home-item">
+<div class="home-item-title">
+  <img class="home-icon" src="/typescript/images/actual-icon.png"/>
+  <p class="home-title">实战篇</p>
+</div>
+
+[TypeScript React](/actual/typescript-react.html)
+
+</div>
 </div>
 
 <style>
@@ -76,7 +87,7 @@ home: true
   justify-content: center;
 }
 .home-item {
-  padding: 0 30px;
+  padding: 0 15px;
 }
 .home-item-title {
   padding-left: 20px;

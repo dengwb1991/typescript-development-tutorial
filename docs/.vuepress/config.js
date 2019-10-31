@@ -50,11 +50,18 @@ module.exports = {
         ]
       },
       {
-        title: '编译篇',
+        title: '配置篇',
         collapsable: false,
         children: [
           'configuration/file-options',
           'configuration/compiler-options'
+        ]
+      },
+      {
+        title: '实战篇',
+        collapsable: false,
+        children: [
+          'actual/typescript-react',
         ]
       }
     ],
