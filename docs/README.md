@@ -77,6 +77,8 @@ home: true
 
 [TypeScript React](/actual/typescript-react.html)
 
+[React 组件与类型](/actual/react-component-type.html)
+
 </div>
 </div>
 

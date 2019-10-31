@@ -62,6 +62,7 @@ module.exports = {
         collapsable: false,
         children: [
           'actual/typescript-react',
+          'actual/react-component-type'
         ]
       }
     ],
