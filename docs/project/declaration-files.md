@@ -12,7 +12,7 @@ sidebarDepth: 3
 
 目前大致分为三种类型的类库，分别为**全局类库**、**模块类库**、**UMD类库**。接下来，我会带大家分析 `ts` 引入各自类库的用法和区别。
 
-本篇大部分为代码段，可以点击[查看源码](https://github.com/dengwb1991/typescript-in-action/tree/master/fourth-typescript)运行阅读。
+本篇大部分为代码段，可以点击[查看源码](https://github.com/dengwb1991/typescript-in-action/tree/master/base-typescript/fourth-typescript)运行阅读。
 
 ### 引入jquery
 

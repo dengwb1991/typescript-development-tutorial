@@ -6,7 +6,7 @@
 
 首先创建两个 ts 文件，分别为 `a.ts` 和 `b.ts` 代码如下：
 
-本篇大部分为代码段，可以点击[查看源码](https://github.com/dengwb1991/typescript-in-action/tree/master/third-typescript)运行阅读。
+本篇大部分为代码段，可以点击[查看源码](https://github.com/dengwb1991/typescript-in-action/tree/master/base-typescript/third-typescript)运行阅读。
 
 ```ts
 // ./src/a.ts

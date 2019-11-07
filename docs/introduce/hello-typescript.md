@@ -18,7 +18,7 @@ var text = 'Hello TypeScript';
 
 但是在项目开发过程中我们会结合构建工具，如 `webpack`，和对应的本地服务 `dev-server` 等相关工具一同使用。
 
-接下来把我们了解到的知识结合在一起。搭建一个[完整的项目](https://github.com/dengwb1991/typescript-in-action/tree/master/first-typescript)。
+接下来把我们了解到的知识结合在一起。搭建一个[完整的项目](https://github.com/dengwb1991/typescript-in-action/tree/master/base-typescript/first-typescript)。
 
 项目根目录中有一个 `tsconfig.json` 文件，简单介绍其作用。
 

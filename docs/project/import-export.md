@@ -6,7 +6,7 @@ sidebarDepth: 3
 
 从本篇开始进入 TypeScript 工程篇的学习，首先我们先回顾 `ES6`、`CommonJS` 中导入和导出的语法结构。
 
-本篇大部分为代码段，可以点击[查看源码](https://github.com/dengwb1991/typescript-in-action/tree/master/second-typescript)运行阅读。
+本篇大部分为代码段，可以点击[查看源码](https://github.com/dengwb1991/typescript-in-action/tree/master/base-typescript/second-typescript)运行阅读。
 
 ## ES6
 
