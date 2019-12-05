@@ -67,6 +67,8 @@ home: true
 
 [tsconfig 编译选项](/configuration/compiler-options.html)
 
+[vscode 编译异常](/configuration/vscode-compiler.html)
+
 </div>
 
 <div class="home-item">

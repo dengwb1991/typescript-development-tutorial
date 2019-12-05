@@ -54,7 +54,8 @@ module.exports = {
         collapsable: false,
         children: [
           'configuration/file-options',
-          'configuration/compiler-options'
+          'configuration/compiler-options',
+          'configuration/vscode-compiler'
         ]
       },
       {
