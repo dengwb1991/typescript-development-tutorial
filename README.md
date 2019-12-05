@@ -21,6 +21,7 @@
 * 配置篇
   * [tsconfig 文件选项](./docs/configuration/file-options.md)
   * [tsconfig 编译选项](./docs/configuration/compiler-options.md)
+  * [vscode 编译异常](./docs/configuration/vscode-compiler.md)
 * 实战篇
   * [TypeScript React](./docs/actual/typescript-react.md)
   * [React 组件与类型](./docs/actual/react-component-type.md)
