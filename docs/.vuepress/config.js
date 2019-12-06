@@ -63,7 +63,8 @@ module.exports = {
         collapsable: false,
         children: [
           'actual/typescript-react',
-          'actual/react-component-type'
+          'actual/react-component-type',
+          'actual/typescript-eslint'
         ]
       }
     ],
