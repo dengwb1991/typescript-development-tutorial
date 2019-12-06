@@ -152,3 +152,5 @@ module.exports = {
   rules: []
 }
 ```
+
+若使用 `dev-server` 可以将 `quiet` 属性设置为 false. 可在终端提示相关错误信息。同时也可以安装并使用 `friendly-errors-webpack-plugin` 插件进一步优化。
