@@ -154,3 +154,5 @@ module.exports = {
 ```
 
 若使用 `dev-server` 可以将 `quiet` 属性设置为 false. 可在终端提示相关错误信息。同时也可以安装并使用 `friendly-errors-webpack-plugin` 插件进一步优化。
+
+更多相关配置请查询[typescript-eslint rules](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules)

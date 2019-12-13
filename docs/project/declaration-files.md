@@ -4,15 +4,72 @@ sidebarDepth: 3
 
 # 声明文件
 
-本篇文章主要介绍在 `ts` 文件中如何引入外部类库以及如何为它们编写声明文件。
+本篇会为大家详细介绍 `TypeScript` 中的声明文件，分享我在工作中遇到的一些问题最终是如何解决的。
 
-这里会接触到 JavaScript模块化 的一些基础知识，若您还对它不了解，可以点击[了解 JavaScript模块化](https://notes.dengwb.com/notes/jsModular.html) 进行预习。
+## 什么是声明文件？
 
-## 介绍
+在开发过程中不可避免的要引用其他第三方 JavaScript 库。虽然通过直接引用可以调用库的类和方法，但是却无法通过 TypeScript 的严格类型检查机制。会提示类似以下的错误
+
+```bash
+Parameter 'xxx' implicitly has an 'any' type.ts(7006)
+```
+
+上面提示的意思是，这个参数存在隐式 `any` 类型，解决该错误有两种方式：
+
+1. 把 `tscofig.json` 中 `noImplicitAny` 设置为 `false`，但我们使用 Typescript 的目的就是为了规范编码，所以这个办法并不推荐。
+2. 编写声明文件，就是以 `.d.ts` 为后缀的文件。 
+
+接下来我们主要介绍在 `ts` 文件中如何引入外部类库以及如何为它们编写声明文件。
+
+## 声明文件放在哪？
+
+在介绍声明文件如何编写之前，列举一下一般声明文件存放的方式。
+
+1. 目录 `src/@types/`，在 `src` 目录新建 `@types` 目录，在其中编写 `.d.ts` 声明文件，声明文件会自动被识别，可以在此为一些没有声明文件的模块编写自己的声明文件，实际上在 `tsconfig.json` 中 `include` 字段包含的范围内编写 `.d.ts`，都将被自动识别；
+2. 与被声明的 `js` 文件同级目录内，创建相同名称的 `.d.ts` 文件，这样也会被自动识别；
+3. 设置 `package.json` 中的 `typings` 属性值，如 `./index.d.ts`. 这样系统会识别该地址的声明文件。同样当我们把自己的js库发布到 npm 上时，按照该方法绑定声明文件。
+4. 同过 npm 模块安装，如 `@type/react` ，它存放在 `node_modules/@types/` 路径下。
+
+## 如何发布声明文件？
+
+如果我们自己实现了一个js库，如何来写声明文件呢？目前有两种方式用来发布声明文件到 `npm` 上：
+
+1. 与你的 `npm` 包同时捆绑在一起；
+2. 发布到 `npm` 上的 [@types organization](https://www.npmjs.com/~types)
+
+### npm包含声明文件
+
+在 `package.json` 中，你的需要指定 `npm` 包的主 `js` 文件，那么你还需要指定主声明文件。如下：
+
+```json
+{
+  "name": "owl-redux",
+  "version": "0.0.1",
+  "description": "A simple version of redux",
+  "main": "dist/owl-redux.js",
+  "typings": "index.d.ts"
+}
+```
+
+有的 `npm` 包设置的 `types` 属性，它和 `typings` 具有相同意义。
+
+:::tip
+如果你的 `npm` 包需要依赖于其他包，需要将依赖放在 `dependencies` 中
+:::
+
+### 发布到@types
+
+[@types](https://www.npmjs.com/~types) 下面的包是从  [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) 里自动发布的，通过  [types-publisher](https://github.com/Microsoft/types-publisher) 工具。 如果想让你的包发布为@types包，提交一个pull request到 https://github.com/DefinitelyTyped/DefinitelyTyped。 在这里查看详细信息  [contribution guidelines page](http://definitelytyped.org/guides/contributing.html)。
+
+## 编写声明文件
 
 目前大致分为三种类型的类库，分别为**全局类库**、**模块类库**、**UMD类库**。接下来，我会带大家分析 `ts` 引入各自类库的用法和区别。
 
-本篇大部分为代码段，可以点击[查看源码](https://github.com/dengwb1991/typescript-in-action/tree/master/base-typescript/fourth-typescript)运行阅读。
+接下来介绍的大部分内容为代码段，可以点击[查看源码](https://github.com/dengwb1991/typescript-in-action/tree/master/base-typescript/fourth-typescript)同时阅读。
+
+:::tip
+这里会接触到 JavaScript模块化 的一些基础知识，若您还对它不了解，可以点击[了解 JavaScript模块化](https://notes.dengwb.com/notes/jsModular.html) 进行预习。
+:::
 
 ### 引入jquery
 
