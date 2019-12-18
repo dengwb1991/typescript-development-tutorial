@@ -53,6 +53,8 @@ home: true
 
 [TypeScript 声明合并](/project/declaration-merging.html)
 
+[如何识别库的类型](/project/identify-the-class-library.html)
+
 [TypeScript 声明文件](/project/declaration-files.html)
 
 </div>

@@ -46,6 +46,7 @@ module.exports = {
           'project/import-export',
           'project/namespace',
           'project/declaration-merging',
+          'project/identify-the-class-library',
           'project/declaration-files'
         ]
       },
