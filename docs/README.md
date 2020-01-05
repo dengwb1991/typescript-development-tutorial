@@ -57,6 +57,8 @@ home: true
 
 [TypeScript 声明文件](/project/declaration-files.html)
 
+[TypeScript 编译工具](/project/compile-tools)
+
 </div>
 
 <div class="home-item">
