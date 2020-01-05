@@ -57,7 +57,7 @@ home: true
 
 [TypeScript 声明文件](/project/declaration-files.html)
 
-[TypeScript 编译工具](/project/compile-tools)
+[TypeScript 编译工具](/project/compile-tools.html)
 
 </div>
 
