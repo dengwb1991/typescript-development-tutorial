@@ -7,10 +7,6 @@
 > 1. 用 ESLint 来规范 Typescript 代码
 > 2. 用 ESLint 来规范 React 代码
 > 3. 在 Webpack 中配置 ESLint
-> 4. 结合 Prettier 和 ESLint 来规范代码
-> 5. 在 VSCode 中使用 ESLint
-> 6. husky 和 lint-staged 构建代码工作流
-> 7. gitlab 的 CI/CD 来规范代码
 
 大部分内容来源于 [在Typescript项目中，如何优雅的使用ESLint](https://github.com/forthealllight/blog/issues/45)
 
