@@ -85,6 +85,8 @@ home: true
 
 [React 组件与类型](/actual/react-component-type.html)
 
+[TypeScript Vue](/actual/typescript-vue.html)
+
 [TypeScript ESLint](/actual/typescript-eslint.html)
 
 </div>

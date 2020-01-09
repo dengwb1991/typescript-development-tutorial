@@ -66,6 +66,7 @@ module.exports = {
         children: [
           'actual/typescript-react',
           'actual/react-component-type',
+          'actual/typescript-vue',
           'actual/typescript-eslint'
         ]
       }
