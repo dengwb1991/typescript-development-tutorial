@@ -62,7 +62,23 @@ const fn = (a) => {
 
 * 解决方案
 
-tsconfig 设置 `allowJs`、`noEmit`
+1. 注销掉 `allowJs` 或设置为 false，不允许编译 JS 文件（js、jsx）
+
+```json
+{
+  "compilerOptions": {
+    ...
+
+    // "allowJs": true,
+
+    ...
+  }
+}
+```
+
+若想允许编译 JS 文件，参考第二种解决办法
+
+2. tsconfig 设置 `allowJs`、`noEmit`
 
 ```json
 {
@@ -76,3 +92,25 @@ tsconfig 设置 `allowJs`、`noEmit`
   }
 }
 ```
+
+`noEmit` 设置为 true 可能会导致 webpack 进行编译打包时报错，可以采用第三种的解决办法.
+
+3. tsconfig 设置 `include`、`exclude`
+
+```json
+{
+  "compilerOptions": {
+    ...
+
+    "allowJs": true,
+    // "noEmit": true,
+
+    ...
+  },
+  "include": ["src/**/*.*"],
+  "exclude": ["node_modules", "build", "dist"]
+}
+```
+
+这里主要是 `include` 起作用，本来设置其中一个就可以，但 `exclude` 并没有作用，可能是个**bug**.
+  
