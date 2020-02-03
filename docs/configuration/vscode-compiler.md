@@ -55,3 +55,24 @@ const fn = (a) => {
   "noImplicitThis": false
 }
 ```
+
+## Cannot write file ... because it would overwrite input file
+
+[https://github.com/Microsoft/TypeScript/issues/14538](https://github.com/Microsoft/TypeScript/issues/14538)
+
+* 解决方案
+
+tsconfig 设置 `allowJs`、`noEmit`
+
+```json
+{
+  "compilerOptions": {
+    ...
+
+    "allowJs": true,
+    "noEmit": true,
+
+    ...
+  }
+}
+```
