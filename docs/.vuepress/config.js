@@ -68,7 +68,8 @@ module.exports = {
           'actual/react-component-type',
           'actual/typescript-vue',
           'actual/vue-component-type',
-          'actual/typescript-eslint'
+          'actual/typescript-eslint',
+          'actual/typescript-jest'
         ]
       }
     ],

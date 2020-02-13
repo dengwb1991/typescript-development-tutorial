@@ -91,6 +91,8 @@ home: true
 
 [TypeScript ESLint](/actual/typescript-eslint.html)
 
+[TypeScript Jest](/actual/typescript-jest.html)
+
 </div>
 </div>
 
