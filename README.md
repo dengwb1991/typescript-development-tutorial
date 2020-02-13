@@ -18,6 +18,8 @@
   * [TypeScript 命名空间](./docs/project/namespace.md)
   * [TypeScript 声明合并](./docs/project/declaration-merging.md)
   * [TypeScript 声明文件](./docs/project/declaration-files.md)
+  * [TypeScript 编译工具](./docs/project/compile-tools.md)
+  * [如何识别库的类型](./docs/project/identify-the-class-library.md)
 * 配置篇
   * [tsconfig 文件选项](./docs/configuration/file-options.md)
   * [tsconfig 编译选项](./docs/configuration/compiler-options.md)
@@ -25,4 +27,7 @@
 * 实战篇
   * [TypeScript React](./docs/actual/typescript-react.md)
   * [React 组件与类型](./docs/actual/react-component-type.md)
+  * [TypeScript Vue](./docs/actual/typescript-vue.md)
+  * [Vue 组件与类型](./docs/actual/vue-component-type.md)
   * [TypeScript ESLint](./docs/actual/typescript-eslint.md)
+  * [TypeScript Jest](./docs/actual/typescript-jest.md)
