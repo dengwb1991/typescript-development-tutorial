@@ -16,7 +16,7 @@ Parameter 'xxx' implicitly has an 'any' type.ts(7006)
 
 上面提示的意思是，这个参数存在隐式 `any` 类型，解决该错误有两种方式：
 
-1. 把 `tscofig.json` 中 `noImplicitAny` 设置为 `false`，但我们使用 Typescript 的目的就是为了规范编码，所以这个办法并不推荐。
+1. 把 `tsconfig.json` 中 `noImplicitAny` 设置为 `false`，但我们使用 Typescript 的目的就是为了规范编码，所以这个办法并不推荐。
 2. 编写声明文件，就是以 `.d.ts` 为后缀的文件。 
 
 接下来我们主要介绍在 `ts` 文件中如何引入外部类库以及如何为它们编写声明文件。
