@@ -11,15 +11,17 @@ sidebarDepth: 3
 在开发过程中不可避免的要引用其他第三方 JavaScript 库。虽然通过直接引用可以调用库的类和方法，但是却无法通过 TypeScript 的严格类型检查机制。会提示类似以下的错误
 
 ```bash
-Parameter 'xxx' implicitly has an 'any' type.ts(7006)
+Could not find a declaration file for module 'owl-ui'. 
+'/Users/dengwenbin/myWorkspace/typescript-in-action/vue-actions/ts-vue/node_modules/owl-ui/lib/owl-ui.common.js' implicitly has an 'any' type.
+Try `npm install @types/owl-ui` if it exists or add a new declaration (.d.ts) file containing `declare module 'owl-ui';`ts(7016)
 ```
 
-上面提示的意思是，这个参数存在隐式 `any` 类型，解决该错误有两种方式：
+上面提示的意思是，找不到模块的声明文件，解决该错误有两种方式：
 
-1. 把 `tsconfig.json` 中 `noImplicitAny` 设置为 `false`，但我们使用 Typescript 的目的就是为了规范编码，所以这个办法并不推荐。
-2. 编写声明文件，就是以 `.d.ts` 为后缀的文件。 
+1. 尝试安装 `@types/owl-ui`。
+2. 添加一个 .d.ts 声明文件，包含 `declare module 'owl-ui'`
 
-接下来我们主要介绍在 `ts` 文件中如何引入外部类库以及如何为它们编写声明文件。
+所以声明文件就是为js库提供类型声明。接下来我们主要介绍在 `ts` 文件中如何引入外部类库以及如何为它们编写声明文件。
 
 ## 声明文件放在哪？
 
