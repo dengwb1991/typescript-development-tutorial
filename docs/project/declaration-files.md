@@ -18,7 +18,7 @@ Try `npm install @types/owl-ui` if it exists or add a new declaration (.d.ts) fi
 
 上面提示的意思是，找不到模块的声明文件，解决该错误有两种方式：
 
-1. 尝试安装 `@types/owl-ui`。
+1. 尝试安装 `@types/owl-ui`
 2. 添加一个 .d.ts 声明文件，包含 `declare module 'owl-ui'`
 
 所以声明文件就是为js库提供类型声明。接下来我们主要介绍在 `ts` 文件中如何引入外部类库以及如何为它们编写声明文件。
