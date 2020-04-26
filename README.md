@@ -17,6 +17,7 @@
   * [TypeScript 导入导出](./docs/project/import-export.md)
   * [TypeScript 命名空间](./docs/project/namespace.md)
   * [TypeScript 声明合并](./docs/project/declaration-merging.md)
+  * [TypeScript 声明语法](./docs/project/declaration-syntax.md)
   * [TypeScript 声明文件](./docs/project/declaration-files.md)
   * [TypeScript 编译工具](./docs/project/compile-tools.md)
   * [如何识别库的类型](./docs/project/identify-the-class-library.md)
