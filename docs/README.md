@@ -55,6 +55,8 @@ home: true
 
 [如何识别库的类型](/project/identify-the-class-library.html)
 
+[TypeScript 声明语句](/project/declaration-syntax.html)
+
 [TypeScript 声明文件](/project/declaration-files.html)
 
 [TypeScript 编译工具](/project/compile-tools.html)
