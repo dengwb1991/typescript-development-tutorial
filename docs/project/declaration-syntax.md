@@ -2,12 +2,17 @@
 
 本章整理了声明文件中涉及到的新语法语句.
 
-[`declare var` 声明全局变量](/project/declaration-syntax.html#全局变量)
-[`declare function` 声明全局函数](/project/declaration-syntax.html#全局函数)
-[`declare namespace` 声明带属性的对象](/project/declaration-syntax.html#带属性的对象)
-[`interface type` 可重用类型接口或别名](/project/declaration-syntax.html#可重用类型接口或别名)
-[组织类型](/project/declaration-syntax.html#组织类型)
-[`declare class` 声明全局类](/project/declaration-syntax.html#全局类))
+* [`declare var` 声明全局变量](/project/declaration-syntax.html#全局变量)
+
+* [`declare function` 声明全局函数](/project/declaration-syntax.html#全局函数)
+
+* [`declare namespace` 声明带属性的对象](/project/declaration-syntax.html#带属性的对象)
+
+* [`interface type` 可重用类型接口或别名](/project/declaration-syntax.html#可重用类型接口或别名)
+
+* [组织类型](/project/declaration-syntax.html#组织类型)
+
+* [`declare class` 声明全局类](/project/declaration-syntax.html#全局类)
 
 ## 全局变量
 
