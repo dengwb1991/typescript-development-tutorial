@@ -114,3 +114,16 @@ const fn = (a) => {
 
 这里主要是 `include` 起作用，本来设置其中一个就可以，但 `exclude` 并没有作用，可能是个**bug**.
   
+## 不能使用JSX，除非提供了 '——JSX' 标志 
+
+错误提示：Cannot use JSX unless the '--jsx' flag is provided.
+
+* 解决方案
+
+修改 `tsconfig.json`
+
+```json
+{
+  "jsx": "react"
+}
+```
