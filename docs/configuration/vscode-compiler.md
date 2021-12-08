@@ -173,3 +173,41 @@ declare module "*.vue" {
 ```bash
 $ npm install @types/node --save-dev
 ```
+
+## Property 'replaceAll' does not exist on type 'string'
+
+```
+Property 'replaceAll' does not exist on type 'string'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2021' or later.ts(2550)
+```
+
+例如：
+
+```js
+let date="1399/06/08"
+console.log(date.replaceAll('/', '_'))
+```
+
+* 解决方案
+
+`replace` 代替 `replaceAll`
+
+```js
+"1399/06/08".replace(/\//g, "_") // "1399_06_08"
+```
+
+或者更改 `tsconfig.json`
+
+```json
+{
+    ...,
+    "compilerOptions": {
+        ...,
+        "lib": [
+          ...,
+          "ES2021.String"
+        ]
+    }
+}
+```
+
+[参考](https://stackoverflow.com/questions/63616486/property-replaceall-does-not-exist-on-type-string)
