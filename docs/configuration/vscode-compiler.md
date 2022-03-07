@@ -174,7 +174,7 @@ declare module "*.vue" {
 $ npm install @types/node --save-dev
 ```
 
-## Property 'replaceAll' does not exist on type 'string'
+## ts(2550) Property 'replaceAll' does not exist on type 'string'
 
 ```
 Property 'replaceAll' does not exist on type 'string'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2021' or later.ts(2550)
@@ -211,3 +211,28 @@ console.log(date.replaceAll('/', '_'))
 ```
 
 [参考](https://stackoverflow.com/questions/63616486/property-replaceall-does-not-exist-on-type-string)
+
+## ts(2339) Property 'xxx' does not exist on type 'Window & typeof globalThis'
+
+* 解决方案
+
+```js
+(window as any).xxx
+```
+
+```js
+declare global {
+  interface Window {
+    xxx: any
+  }
+}
+window.xxx = window.xxx || {}
+```
+
+```js
+interface MyWindow extends Window {
+  xxx(): void
+}
+ 
+declare var window: MyWindow
+```
